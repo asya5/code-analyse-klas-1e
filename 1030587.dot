@@ -1,0 +1,18 @@
+# 1030587 Emir Cayir
+
+number = 123
+numberS = number //10
+last_digit = 124 %10
+b = 0
+
+while numberS > 0:
+
+    b = b +(numberS%10)
+    numberS= numberS//10
+
+    if b == last_digit:
+        print ('VALID')
+
+    if numberS==0:
+        if b!=last_digit:
+            print ('INVALID')
